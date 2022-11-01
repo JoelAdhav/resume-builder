@@ -286,9 +286,7 @@ const Resume = forwardRef(({ information, sections, activeColor }, ref) => {
                     {info.summary?.sectionTitle}
                 </div>
                 <div className={styles.content}>
-                    <div className={styles.overview}>
-                        {info.summary?.summary}
-                    </div>
+                    <p className={styles.overview}>{info.summary?.detail}</p>
                 </div>
             </div>
         ),
@@ -306,7 +304,7 @@ const Resume = forwardRef(({ information, sections, activeColor }, ref) => {
                     {info.other?.sectionTitle}
                 </div>
                 <div className={styles.content}>
-                    <div className={styles.overview}>{info.other?.other}</div>
+                    <p className={styles.overview}>{info.other?.detail}</p>
                 </div>
             </div>
         ),

@@ -538,6 +538,10 @@ const Editor = ({ sections, information, setInformation }) => {
     };
 
     useEffect(() => {
+        console.log(information);
+    });
+
+    useEffect(() => {
         const activeInfo = information[sections[activeSectionKey]];
         setActiveInformation(activeInfo);
         setSectionTitle(sections[activeSectionKey]);
