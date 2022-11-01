@@ -6,7 +6,7 @@ import ReactToPrint from 'react-to-print';
 import Resume from '../Resume/Resume';
 
 const Body = () => {
-    const colors = ['#1369b9', '#48bb78', '#0bc5ea', '#a0aec0', '#ed8936'];
+    const colors = ['#ed8936', '#a0aec0', '#1369b9', '#48bb78', '#0bc5ea'];
     const sections = {
         basicInfo: 'Basic Info',
         workExp: 'Work Experience',

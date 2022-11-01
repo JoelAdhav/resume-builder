@@ -49,7 +49,7 @@ const Editor = ({ sections, information, setInformation }) => {
                 />
                 <InputControl
                     label='Company Name'
-                    placeholder='Enter company name eg. amazon'
+                    placeholder='Enter company name eg. Micorsoft'
                     value={values.companyName}
                     onChange={event =>
                         setValues(prev => ({
@@ -113,17 +113,14 @@ const Editor = ({ sections, information, setInformation }) => {
             <div className={styles.column}>
                 <label>Enter work description</label>
                 <InputControl
-                    placeholder='Line 1'
                     value={values.points ? values.points[0] : ''}
                     onChange={event => handlePointUpdate(event.target.value, 0)}
                 />
                 <InputControl
-                    placeholder='Line 2'
                     value={values.points ? values.points[1] : ''}
                     onChange={event => handlePointUpdate(event.target.value, 1)}
                 />
                 <InputControl
-                    placeholder='Line 3'
                     value={values.points ? values.points[2] : ''}
                     onChange={event => handlePointUpdate(event.target.value, 2)}
                 />
@@ -136,7 +133,7 @@ const Editor = ({ sections, information, setInformation }) => {
             <div className={styles.row}>
                 <InputControl
                     label='Title'
-                    placeholder='Enter title eg. Chat app'
+                    placeholder='Enter title eg. Video Calling App'
                     value={values.title}
                     onChange={event =>
                         setValues(prev => ({
@@ -184,22 +181,18 @@ const Editor = ({ sections, information, setInformation }) => {
             <div className={styles.column}>
                 <label>Enter project description</label>
                 <InputControl
-                    placeholder='Line 1'
                     value={values.points ? values.points[0] : ''}
                     onChange={event => handlePointUpdate(event.target.value, 0)}
                 />
                 <InputControl
-                    placeholder='Line 2'
                     value={values.points ? values.points[1] : ''}
                     onChange={event => handlePointUpdate(event.target.value, 1)}
                 />
                 <InputControl
-                    placeholder='Line 3'
                     value={values.points ? values.points[2] : ''}
                     onChange={event => handlePointUpdate(event.target.value, 2)}
                 />
                 <InputControl
-                    placeholder='Line 4'
                     value={values.points ? values.points[3] : ''}
                     onChange={event => handlePointUpdate(event.target.value, 3)}
                 />
@@ -267,7 +260,7 @@ const Editor = ({ sections, information, setInformation }) => {
             <div className={styles.row}>
                 <InputControl
                     label='Name'
-                    placeholder='Enter your full name eg. Aashu'
+                    placeholder='Enter your full name eg. Shobit Rai'
                     value={values.name}
                     onChange={event =>
                         setValues(prev => ({
